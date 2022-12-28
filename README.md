@@ -10,5 +10,9 @@ I will limit the scope of the project to only villas, which means properties suc
 - Model evaluation and statistical analysis.
 
 ## Preperation of data
-Since the data does not exist yet the first step is to scrape it from [Hemnet](https://www.hemnet.se/). To do this i will be using [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) which is a very powerful library for scraping and parsing HTML content to extract data.
+Since the data does not exist yet the first step is to scrape it from [Hemnet](https://www.hemnet.se/). To do this i will be using [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) which is a very powerful library for scraping and parsing HTML content to extract data. All the code for the scraping can be found in the scraping folder. The unprocced data can be found in [house_properties_data.csv](https://github.com/Dan-Irl/House-Price-Prediction/blob/main/house_properties_data.csv).
+
+The next step is to proccess the data, by this i mean removing data points containing NaN or None values. In the case of "supplemental area" collum in the data i will just set the value 0 if it is "NaN" or "None".
+
+Next on the chopping block is all the remaning data points containing "None", these were mosly in the "build_year" or "operating_cost" collum. Some entries in the "building year" collum contained a range "YYYY - YYYY" of the build year instead of just the build year "YYYY", this was replaced by the for element in the range.
 
