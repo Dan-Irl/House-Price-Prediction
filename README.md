@@ -3,7 +3,7 @@
 
 Having a model that can predict house prices using data such as  such as location, size and room count could be very useful for a entity like a brokerage firm. My goal initially was to predict a house prices in Sweden using a existing data set, but i could not find one that had everything i was looking for so I decided to instead scrape the data from [Hemnet](https://www.hemnet.se/) which is the biggest online market place for the sale of properties.
 
-I will limit the scope of the project to only villas, which means properties such as apartments or terraced houses will be excluded. I will also limit the data to sales happened in the last 12 months.
+I will limit the scope of the project to only villas, which means properties such as apartments or terraced houses will be excluded. I will also limit the data to sales happened in the last 12 months. Another limitation worth mentioning is that the scope of this project is to learn how to use these technologies and not create an optimal model with great predicting capabilities (of course i will be happy if that happens).
 
 ## **Goals:**
 - Collecting data by scraping it from [Hemnet](https://www.hemnet.se/).
@@ -16,7 +16,7 @@ Since the data does not exist yet the first step is to scrape it from [Hemnet](h
 
 Next step is the data processing and feature exploration. After basic processing such as removing NaN values i ended up with 2214 entries, which is a worrying low amount of data point when training a machine learning model but for the sake of learning i think this is acceptable. Two features were added to the data set, "living to land ratio" and "area per room" which seemed to be somewhat correlated to the sale price. The final correlation table can be seen below. We observe that we have a few features that are correlated with the sold price target.
 
-<img src="img/correlation_map.png" alt="drawing" width="800"/>
+<img src="img/Correlation_map.png" alt="drawing" width="800"/>
 </br>
 </br>
 
