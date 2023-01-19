@@ -16,7 +16,7 @@ Since the data does not exist yet the first step is to scrape it from [Hemnet](h
 
 Next step is the data processing and feature exploration. After basic processing such as removing NaN values i ended up with 2214 entries, which is a worrying low amount of data point when training a machine learning model but for the sake of learning i think this is acceptable. Two features were added to the data set, "living to land ratio" and "area per room" which seemed to be somewhat correlated to the sale price. The final correlation table can be seen below. We observe that we have a few features that are correlated with the sold price target.
 
-<img src="img/correlation_map.png" alt="drawing" width="800"/>
+<img src="img/Correlation_map.png" alt="drawing" width="800"/>
 </br>
 </br>
 
